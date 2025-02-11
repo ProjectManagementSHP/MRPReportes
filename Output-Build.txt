@@ -1,0 +1,9 @@
+﻿Building MRP...
+1>------ Publish started: Project: MRP, Configuration: Debug Any CPU ------
+1>  MRP -> C:\Users\BMXLAPSIS06\Documents\Visual Studio 2015\SEA SHP\MRP\MRP\bin\Debug\MRP_Forecast.exe
+Connecting to '\\10.17.182.22\sea-s\MRP_Forecast\'...
+Publishing files...
+Publish success.
+\\10.17.182.22\sea-s\MRP_Forecast\
+========== Build: 0 succeeded, 0 failed, 1 up-to-date, 0 skipped ==========
+========== Publish: 1 succeeded, 0 failed, 0 skipped ==========

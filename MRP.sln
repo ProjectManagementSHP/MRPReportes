@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MRP", "MRP\MRP.vbproj", "{CCFDD652-B740-433E-AAEC-409CF0D381CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCFDD652-B740-433E-AAEC-409CF0D381CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFDD652-B740-433E-AAEC-409CF0D381CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFDD652-B740-433E-AAEC-409CF0D381CE}.Debug|x64.ActiveCfg = Debug|x64
+		{CCFDD652-B740-433E-AAEC-409CF0D381CE}.Debug|x64.Build.0 = Debug|x64
+		{CCFDD652-B740-433E-AAEC-409CF0D381CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFDD652-B740-433E-AAEC-409CF0D381CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCFDD652-B740-433E-AAEC-409CF0D381CE}.Release|x64.ActiveCfg = Release|x64
+		{CCFDD652-B740-433E-AAEC-409CF0D381CE}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F63B969-0522-4814-B602-510FB2E5DB9D}
+	EndGlobalSection
+EndGlobal
