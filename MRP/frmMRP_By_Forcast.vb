@@ -7,6 +7,8 @@ Imports System.Net
 Imports System.DirectoryServices
 Imports System.Text
 Imports System.Xml
+Imports System.Security.Principal
+Imports System.Security.Cryptography
 
 Public Class frmMRP_By_Forcast
     'Dim strCnn As String = "Server=SHPLAPSIS01\SQLEXPRESS2012; Database=SEA; User ID=sa;Password=Fernanda25"
@@ -2295,7 +2297,7 @@ Public Class frmMRP_By_Forcast
         System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
     End Sub
 
-    Private Sub btnCancelLoginEng_Click(sender As Object, e As EventArgs) Handles btnCancelLoginEng.Click
+    Private Sub btnCancelLoginEng_Click(sender As Object, e As EventArgs)
         System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor
         Me.Close()
         System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
@@ -5108,7 +5110,7 @@ Public Class frmMRP_By_Forcast
     Private Function AutorizacionDelUsuario(ByVal Usuario As String)
         Dim Resp As String = "NO" 'tblItemsPOUserIDAuthorizations
         Dim Edo As String = ""
-        Dim Query As String = "SELECT * FROM tblItemsPOUserIDAuthorizations WHERE UserID=@UserID AND Active = 1 AND Module = 'MRPLogin'"
+        Dim Query As String = "SELECT * FROM tblItemsPOUserIDAuthorizations WHERE UserID=@UserID AND Active = 1 AND (Module = 'MRPLogin' or Module = 'MRPForecast')"
         Using TN As New System.Data.DataTable
             Try
                 Dim cmd As SqlCommand = New SqlCommand(Query, cnn)
@@ -7117,6 +7119,157 @@ Public Class frmMRP_By_Forcast
         End If
         System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
     End Sub
+
+    Private Sub frmMRP_By_Forcast_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
+
+        If dashboardInstanceExists() Then
+            Dim credentials() As String = getCredentials()
+
+
+            If credentials(0) IsNot Nothing And credentials(1) IsNot Nothing Then
+                If havePermission("MRPForecast", credentials(0)) Then           '-> MODIFICAR LAS COMILLAS POR EL MÓDULO CON EL QUE SE AUTORIZA EN tblItemsPOUserIDAuthorization"
+
+                    txbUserMRP.Text = credentials(0)
+                    txbUserMRPPassword.Text = Decrypt(credentials(1))
+                    btnLoginMRP.PerformClick()                  '-> Cambiar botón de inicio para que valide el usuario y contraseña que se colocó de forma automática
+
+                End If
+            End If
+        End If
+
+        Me.Opacity = 100
+        Me.CenterToScreen()
+
+    End Sub
+
+
+    Private Function dashboardInstanceExists() As Boolean
+        Dim instances() As Process = Process.GetProcessesByName("SEA DASHBOARD")
+
+        If instances.Length > 0 Then
+            Return True
+        Else
+            Return False
+        End If
+
+    End Function
+
+
+
+
+
+
+    Private Function getCredentials() As String()
+
+        Dim credentials(2) As String
+        Dim query As String = "select top (1) userID, isnull(password, '') as password from tblLogs where status = 'active' and hostname = @HOSTNAME order by id desc"
+
+        Try
+            cnn.Open()
+
+            Dim cmd As New SqlCommand(query, cnn)
+            cmd.Parameters.AddWithValue("@hostname", WindowsIdentity.GetCurrent().Name.ToString())
+            Dim reader As SqlDataReader = cmd.ExecuteReader()
+
+            If reader.Read() Then
+                credentials(0) = reader("userID").ToString()
+                credentials(1) = reader("password").ToString()
+            End If
+
+
+        Catch ex As Exception
+
+            MessageBox.Show(ex.Message, ex.StackTrace, MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        End Try
+
+        cnn.Close()
+        Return credentials
+
+    End Function
+
+
+
+
+    Function havePermission(modulo As String, user As String)
+
+        Dim usas As String = user
+        Dim query As String = "select * from tblItemsPOUserIDAuthorizations where userid = @userid and active = 1 and module = @modulo"
+
+        Try
+
+            cnn.Open()
+
+            Dim cmd As New SqlCommand(query, cnn)
+
+            cmd.CommandType = CommandType.Text
+            cmd.Parameters.AddWithValue("@userid", usas)
+            cmd.Parameters.AddWithValue("@modulo", modulo)
+
+            Dim table As New Data.DataTable()
+            Dim dataReader As SqlDataReader = cmd.ExecuteReader()
+
+            table.Load(dataReader)
+
+            Dim tabla As Integer = table.Rows.Count
+
+            If tabla > 0 Then
+                cnn.Close()
+                Return True
+            Else
+                cnn.Close()
+                Return False
+            End If
+
+            dataReader.Close()
+
+        Catch ex As Exception
+
+            MessageBox.Show(ex.Message, ex.StackTrace, MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        End Try
+
+        Return False
+
+    End Function
+
+
+
+
+    Public Function Decrypt(ByVal stringToDecrypt As String) As String
+
+        Dim key() As Byte
+        Dim IV() As Byte = {&H12, &H34, &H56, &H78, &H90, &HAB, &HCD, &HEF}
+        Const EncryptionKey As String = "SpecializedHarnessProducts"
+
+        Try
+
+            If Not String.IsNullOrWhiteSpace(stringToDecrypt) Then
+
+                key = Encoding.UTF8.GetBytes(EncryptionKey.Substring(0, 8))
+
+                Dim des As New DESCryptoServiceProvider()
+                Dim ms As New MemoryStream(Convert.FromBase64String(stringToDecrypt))
+                Dim cs As New CryptoStream(ms, des.CreateDecryptor(key, IV), CryptoStreamMode.Read)
+                Dim sr As New StreamReader(cs)
+
+                Return sr.ReadToEnd()
+
+            Else
+
+                Return ""
+
+            End If
+
+
+
+        Catch ex As Exception
+
+            Return ""
+
+        End Try
+
+    End Function
 
     Private Sub cmbRevBOMForecast_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbRevBOMForecast.SelectedIndexChanged
         System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor

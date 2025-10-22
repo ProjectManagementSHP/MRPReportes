@@ -23,10 +23,10 @@ Partial Class frmMRP_By_Forcast
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMRP_By_Forcast))
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.lblTAUSalesOrder = New System.Windows.Forms.Label()
         Me.GroupBoxPurchasingOrderHistory = New System.Windows.Forms.GroupBox()
         Me.GroupBoxBudgetInformation = New System.Windows.Forms.GroupBox()
@@ -136,7 +136,6 @@ Partial Class frmMRP_By_Forcast
         Me.lblTMRPReference = New System.Windows.Forms.Label()
         Me.lblRecordsMRP = New System.Windows.Forms.Label()
         Me.GroupBoxUserMRP = New System.Windows.Forms.GroupBox()
-        Me.btnCancelLoginEng = New System.Windows.Forms.Button()
         Me.btnLoginMRP = New System.Windows.Forms.Button()
         Me.txbUserMRP = New System.Windows.Forms.TextBox()
         Me.lblTEngPassword = New System.Windows.Forms.Label()
@@ -262,9 +261,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxPurchasingOrderHistory.Controls.Add(Me.lblTItems)
         Me.GroupBoxPurchasingOrderHistory.Controls.Add(Me.GridPurchasingOrderItemsHistory)
         Me.GroupBoxPurchasingOrderHistory.Location = New System.Drawing.Point(1, 16)
-        Me.GroupBoxPurchasingOrderHistory.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxPurchasingOrderHistory.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxPurchasingOrderHistory.Name = "GroupBoxPurchasingOrderHistory"
-        Me.GroupBoxPurchasingOrderHistory.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxPurchasingOrderHistory.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxPurchasingOrderHistory.Size = New System.Drawing.Size(1147, 489)
         Me.GroupBoxPurchasingOrderHistory.TabIndex = 5320
         Me.GroupBoxPurchasingOrderHistory.TabStop = False
@@ -286,9 +285,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxBudgetInformation.Controls.Add(Me.GridPerVendor)
         Me.GroupBoxBudgetInformation.Controls.Add(Me.GridPerWeek)
         Me.GroupBoxBudgetInformation.Location = New System.Drawing.Point(1, 16)
-        Me.GroupBoxBudgetInformation.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxBudgetInformation.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxBudgetInformation.Name = "GroupBoxBudgetInformation"
-        Me.GroupBoxBudgetInformation.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxBudgetInformation.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxBudgetInformation.Size = New System.Drawing.Size(1145, 515)
         Me.GroupBoxBudgetInformation.TabIndex = 5320
         Me.GroupBoxBudgetInformation.TabStop = False
@@ -309,9 +308,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupWipSalesOrder.Controls.Add(Me.GridSalesOrder)
         Me.GroupWipSalesOrder.Controls.Add(Me.GridWIP)
         Me.GroupWipSalesOrder.Location = New System.Drawing.Point(1, 16)
-        Me.GroupWipSalesOrder.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupWipSalesOrder.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupWipSalesOrder.Name = "GroupWipSalesOrder"
-        Me.GroupWipSalesOrder.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupWipSalesOrder.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupWipSalesOrder.Size = New System.Drawing.Size(1145, 489)
         Me.GroupWipSalesOrder.TabIndex = 5319
         Me.GroupWipSalesOrder.TabStop = False
@@ -361,20 +360,24 @@ Partial Class frmMRP_By_Forcast
         'btnRefreshSalesOrders
         '
         Me.btnRefreshSalesOrders.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnRefreshSalesOrders.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRefreshSalesOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRefreshSalesOrders.Image = CType(resources.GetObject("btnRefreshSalesOrders.Image"), System.Drawing.Image)
-        Me.btnRefreshSalesOrders.Location = New System.Drawing.Point(1016, 15)
-        Me.btnRefreshSalesOrders.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnRefreshSalesOrders.Location = New System.Drawing.Point(1012, 15)
+        Me.btnRefreshSalesOrders.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRefreshSalesOrders.Name = "btnRefreshSalesOrders"
-        Me.btnRefreshSalesOrders.Size = New System.Drawing.Size(28, 32)
+        Me.btnRefreshSalesOrders.Size = New System.Drawing.Size(32, 32)
         Me.btnRefreshSalesOrders.TabIndex = 1111
         Me.btnRefreshSalesOrders.UseVisualStyleBackColor = True
         '
         'btnCloseAddIems
         '
         Me.btnCloseAddIems.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnCloseAddIems.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCloseAddIems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCloseAddIems.Image = CType(resources.GetObject("btnCloseAddIems.Image"), System.Drawing.Image)
         Me.btnCloseAddIems.Location = New System.Drawing.Point(1048, 15)
-        Me.btnCloseAddIems.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCloseAddIems.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCloseAddIems.Name = "btnCloseAddIems"
         Me.btnCloseAddIems.Size = New System.Drawing.Size(34, 31)
         Me.btnCloseAddIems.TabIndex = 553
@@ -387,9 +390,10 @@ Partial Class frmMRP_By_Forcast
         Me.GridSalesOrder.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GridSalesOrder.BackgroundColor = System.Drawing.Color.White
         Me.GridSalesOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridSalesOrder.Location = New System.Drawing.Point(2, 288)
-        Me.GridSalesOrder.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GridSalesOrder.Margin = New System.Windows.Forms.Padding(2)
         Me.GridSalesOrder.Name = "GridSalesOrder"
         Me.GridSalesOrder.RowTemplate.Height = 24
         Me.GridSalesOrder.Size = New System.Drawing.Size(1138, 182)
@@ -401,9 +405,10 @@ Partial Class frmMRP_By_Forcast
         Me.GridWIP.AllowUserToDeleteRows = False
         Me.GridWIP.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GridWIP.BackgroundColor = System.Drawing.Color.White
         Me.GridWIP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridWIP.Location = New System.Drawing.Point(3, 50)
-        Me.GridWIP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GridWIP.Margin = New System.Windows.Forms.Padding(2)
         Me.GridWIP.Name = "GridWIP"
         Me.GridWIP.RowTemplate.Height = 24
         Me.GridWIP.Size = New System.Drawing.Size(1137, 220)
@@ -464,7 +469,7 @@ Partial Class frmMRP_By_Forcast
         Me.btnCloseBudgetInformation.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnCloseBudgetInformation.Image = CType(resources.GetObject("btnCloseBudgetInformation.Image"), System.Drawing.Image)
         Me.btnCloseBudgetInformation.Location = New System.Drawing.Point(1048, 15)
-        Me.btnCloseBudgetInformation.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCloseBudgetInformation.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCloseBudgetInformation.Name = "btnCloseBudgetInformation"
         Me.btnCloseBudgetInformation.Size = New System.Drawing.Size(34, 31)
         Me.btnCloseBudgetInformation.TabIndex = 553
@@ -478,7 +483,7 @@ Partial Class frmMRP_By_Forcast
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GridPerVendor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridPerVendor.Location = New System.Drawing.Point(395, 50)
-        Me.GridPerVendor.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GridPerVendor.Margin = New System.Windows.Forms.Padding(2)
         Me.GridPerVendor.Name = "GridPerVendor"
         Me.GridPerVendor.RowTemplate.Height = 24
         Me.GridPerVendor.Size = New System.Drawing.Size(743, 180)
@@ -490,7 +495,7 @@ Partial Class frmMRP_By_Forcast
         Me.GridPerWeek.AllowUserToDeleteRows = False
         Me.GridPerWeek.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridPerWeek.Location = New System.Drawing.Point(3, 50)
-        Me.GridPerWeek.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GridPerWeek.Margin = New System.Windows.Forms.Padding(2)
         Me.GridPerWeek.Name = "GridPerWeek"
         Me.GridPerWeek.RowTemplate.Height = 24
         Me.GridPerWeek.Size = New System.Drawing.Size(369, 180)
@@ -501,7 +506,7 @@ Partial Class frmMRP_By_Forcast
         Me.btnRefreshPurchasingOrderItemsHistory.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnRefreshPurchasingOrderItemsHistory.Image = CType(resources.GetObject("btnRefreshPurchasingOrderItemsHistory.Image"), System.Drawing.Image)
         Me.btnRefreshPurchasingOrderItemsHistory.Location = New System.Drawing.Point(1047, 15)
-        Me.btnRefreshPurchasingOrderItemsHistory.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnRefreshPurchasingOrderItemsHistory.Margin = New System.Windows.Forms.Padding(2)
         Me.btnRefreshPurchasingOrderItemsHistory.Name = "btnRefreshPurchasingOrderItemsHistory"
         Me.btnRefreshPurchasingOrderItemsHistory.Size = New System.Drawing.Size(28, 32)
         Me.btnRefreshPurchasingOrderItemsHistory.TabIndex = 5313
@@ -513,7 +518,7 @@ Partial Class frmMRP_By_Forcast
         Me.btnClosePurchasingOrderItemsHistory.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnClosePurchasingOrderItemsHistory.Image = CType(resources.GetObject("btnClosePurchasingOrderItemsHistory.Image"), System.Drawing.Image)
         Me.btnClosePurchasingOrderItemsHistory.Location = New System.Drawing.Point(1079, 15)
-        Me.btnClosePurchasingOrderItemsHistory.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnClosePurchasingOrderItemsHistory.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClosePurchasingOrderItemsHistory.Name = "btnClosePurchasingOrderItemsHistory"
         Me.btnClosePurchasingOrderItemsHistory.Size = New System.Drawing.Size(34, 31)
         Me.btnClosePurchasingOrderItemsHistory.TabIndex = 5312
@@ -546,25 +551,25 @@ Partial Class frmMRP_By_Forcast
         Me.GridPurchasingOrderItemsHistory.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GridPurchasingOrderItemsHistory.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GridPurchasingOrderItemsHistory.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
         Me.GridPurchasingOrderItemsHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GridPurchasingOrderItemsHistory.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GridPurchasingOrderItemsHistory.DefaultCellStyle = DataGridViewCellStyle10
         Me.GridPurchasingOrderItemsHistory.Location = New System.Drawing.Point(4, 54)
-        Me.GridPurchasingOrderItemsHistory.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GridPurchasingOrderItemsHistory.Margin = New System.Windows.Forms.Padding(2)
         Me.GridPurchasingOrderItemsHistory.Name = "GridPurchasingOrderItemsHistory"
         Me.GridPurchasingOrderItemsHistory.ReadOnly = True
         Me.GridPurchasingOrderItemsHistory.RowTemplate.Height = 24
@@ -578,9 +583,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxSalesOrderStatus.Controls.Add(Me.rdoCancelSalesOrderByAU)
         Me.GroupBoxSalesOrderStatus.Controls.Add(Me.rdoCloseSalesOrderByAU)
         Me.GroupBoxSalesOrderStatus.Location = New System.Drawing.Point(35, 64)
-        Me.GroupBoxSalesOrderStatus.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxSalesOrderStatus.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxSalesOrderStatus.Name = "GroupBoxSalesOrderStatus"
-        Me.GroupBoxSalesOrderStatus.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxSalesOrderStatus.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxSalesOrderStatus.Size = New System.Drawing.Size(61, 80)
         Me.GroupBoxSalesOrderStatus.TabIndex = 1142
         Me.GroupBoxSalesOrderStatus.TabStop = False
@@ -589,7 +594,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.rdoAllSalesOrderByAU.AutoSize = True
         Me.rdoAllSalesOrderByAU.Location = New System.Drawing.Point(4, 60)
-        Me.rdoAllSalesOrderByAU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.rdoAllSalesOrderByAU.Margin = New System.Windows.Forms.Padding(2)
         Me.rdoAllSalesOrderByAU.Name = "rdoAllSalesOrderByAU"
         Me.rdoAllSalesOrderByAU.Size = New System.Drawing.Size(36, 17)
         Me.rdoAllSalesOrderByAU.TabIndex = 1141
@@ -601,7 +606,7 @@ Partial Class frmMRP_By_Forcast
         Me.rdoOpenSalesOrderByAU.AutoSize = True
         Me.rdoOpenSalesOrderByAU.Checked = True
         Me.rdoOpenSalesOrderByAU.Location = New System.Drawing.Point(4, 9)
-        Me.rdoOpenSalesOrderByAU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.rdoOpenSalesOrderByAU.Margin = New System.Windows.Forms.Padding(2)
         Me.rdoOpenSalesOrderByAU.Name = "rdoOpenSalesOrderByAU"
         Me.rdoOpenSalesOrderByAU.Size = New System.Drawing.Size(51, 17)
         Me.rdoOpenSalesOrderByAU.TabIndex = 1138
@@ -613,7 +618,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.rdoCancelSalesOrderByAU.AutoSize = True
         Me.rdoCancelSalesOrderByAU.Location = New System.Drawing.Point(4, 43)
-        Me.rdoCancelSalesOrderByAU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.rdoCancelSalesOrderByAU.Margin = New System.Windows.Forms.Padding(2)
         Me.rdoCancelSalesOrderByAU.Name = "rdoCancelSalesOrderByAU"
         Me.rdoCancelSalesOrderByAU.Size = New System.Drawing.Size(58, 17)
         Me.rdoCancelSalesOrderByAU.TabIndex = 1140
@@ -624,7 +629,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.rdoCloseSalesOrderByAU.AutoSize = True
         Me.rdoCloseSalesOrderByAU.Location = New System.Drawing.Point(4, 26)
-        Me.rdoCloseSalesOrderByAU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.rdoCloseSalesOrderByAU.Margin = New System.Windows.Forms.Padding(2)
         Me.rdoCloseSalesOrderByAU.Name = "rdoCloseSalesOrderByAU"
         Me.rdoCloseSalesOrderByAU.Size = New System.Drawing.Size(51, 17)
         Me.rdoCloseSalesOrderByAU.TabIndex = 1139
@@ -637,9 +642,9 @@ Partial Class frmMRP_By_Forcast
         Me.TabPageSalesOrder.Controls.Add(Me.lblRecordsGridSalesOrder)
         Me.TabPageSalesOrder.Controls.Add(Me.GridAUSalesOrderFind)
         Me.TabPageSalesOrder.Location = New System.Drawing.Point(4, 22)
-        Me.TabPageSalesOrder.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageSalesOrder.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPageSalesOrder.Name = "TabPageSalesOrder"
-        Me.TabPageSalesOrder.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageSalesOrder.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPageSalesOrder.Size = New System.Drawing.Size(1149, 497)
         Me.TabPageSalesOrder.TabIndex = 4
         Me.TabPageSalesOrder.Text = "Sales Order"
@@ -654,9 +659,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxSalesOrderControl.Controls.Add(Me.txbAUSalesOrder)
         Me.GroupBoxSalesOrderControl.Controls.Add(Me.cmbRevSalesOrder)
         Me.GroupBoxSalesOrderControl.Location = New System.Drawing.Point(8, 32)
-        Me.GroupBoxSalesOrderControl.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxSalesOrderControl.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxSalesOrderControl.Name = "GroupBoxSalesOrderControl"
-        Me.GroupBoxSalesOrderControl.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxSalesOrderControl.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxSalesOrderControl.Size = New System.Drawing.Size(203, 164)
         Me.GroupBoxSalesOrderControl.TabIndex = 1135
         Me.GroupBoxSalesOrderControl.TabStop = False
@@ -667,7 +672,7 @@ Partial Class frmMRP_By_Forcast
         Me.btnFindSalesOrder.Font = New System.Drawing.Font("Microsoft Sans Serif", 4.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFindSalesOrder.Image = CType(resources.GetObject("btnFindSalesOrder.Image"), System.Drawing.Image)
         Me.btnFindSalesOrder.Location = New System.Drawing.Point(160, 18)
-        Me.btnFindSalesOrder.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnFindSalesOrder.Margin = New System.Windows.Forms.Padding(2)
         Me.btnFindSalesOrder.Name = "btnFindSalesOrder"
         Me.btnFindSalesOrder.Size = New System.Drawing.Size(38, 38)
         Me.btnFindSalesOrder.TabIndex = 1137
@@ -687,7 +692,7 @@ Partial Class frmMRP_By_Forcast
         'txbAUSalesOrder
         '
         Me.txbAUSalesOrder.Location = New System.Drawing.Point(35, 17)
-        Me.txbAUSalesOrder.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbAUSalesOrder.Margin = New System.Windows.Forms.Padding(2)
         Me.txbAUSalesOrder.Name = "txbAUSalesOrder"
         Me.txbAUSalesOrder.Size = New System.Drawing.Size(122, 20)
         Me.txbAUSalesOrder.TabIndex = 1134
@@ -697,7 +702,7 @@ Partial Class frmMRP_By_Forcast
         Me.cmbRevSalesOrder.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbRevSalesOrder.FormattingEnabled = True
         Me.cmbRevSalesOrder.Location = New System.Drawing.Point(35, 40)
-        Me.cmbRevSalesOrder.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbRevSalesOrder.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbRevSalesOrder.Name = "cmbRevSalesOrder"
         Me.cmbRevSalesOrder.Size = New System.Drawing.Size(122, 21)
         Me.cmbRevSalesOrder.TabIndex = 1133
@@ -719,9 +724,10 @@ Partial Class frmMRP_By_Forcast
         Me.GridAUSalesOrderFind.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GridAUSalesOrderFind.BackgroundColor = System.Drawing.Color.White
         Me.GridAUSalesOrderFind.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridAUSalesOrderFind.Location = New System.Drawing.Point(216, 32)
-        Me.GridAUSalesOrderFind.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GridAUSalesOrderFind.Margin = New System.Windows.Forms.Padding(2)
         Me.GridAUSalesOrderFind.Name = "GridAUSalesOrderFind"
         Me.GridAUSalesOrderFind.RowTemplate.Height = 24
         Me.GridAUSalesOrderFind.Size = New System.Drawing.Size(704, 407)
@@ -741,7 +747,7 @@ Partial Class frmMRP_By_Forcast
         'txbExchangeRate
         '
         Me.txbExchangeRate.Location = New System.Drawing.Point(831, 80)
-        Me.txbExchangeRate.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbExchangeRate.Margin = New System.Windows.Forms.Padding(2)
         Me.txbExchangeRate.Name = "txbExchangeRate"
         Me.txbExchangeRate.Size = New System.Drawing.Size(41, 20)
         Me.txbExchangeRate.TabIndex = 5324
@@ -764,7 +770,7 @@ Partial Class frmMRP_By_Forcast
         Me.cmb10Percent.FormattingEnabled = True
         Me.cmb10Percent.Items.AddRange(New Object() {"ALL", "10%"})
         Me.cmb10Percent.Location = New System.Drawing.Point(210, 85)
-        Me.cmb10Percent.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmb10Percent.Margin = New System.Windows.Forms.Padding(2)
         Me.cmb10Percent.Name = "cmb10Percent"
         Me.cmb10Percent.Size = New System.Drawing.Size(58, 21)
         Me.cmb10Percent.TabIndex = 5322
@@ -774,7 +780,7 @@ Partial Class frmMRP_By_Forcast
         Me.btnHelp.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnHelp.Image = CType(resources.GetObject("btnHelp.Image"), System.Drawing.Image)
         Me.btnHelp.Location = New System.Drawing.Point(1107, 62)
-        Me.btnHelp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnHelp.Margin = New System.Windows.Forms.Padding(2)
         Me.btnHelp.Name = "btnHelp"
         Me.btnHelp.Size = New System.Drawing.Size(40, 40)
         Me.btnHelp.TabIndex = 5321
@@ -788,7 +794,7 @@ Partial Class frmMRP_By_Forcast
         Me.cmbFilter.FormattingEnabled = True
         Me.cmbFilter.Items.AddRange(New Object() {"Only Primary Without Bin Balance", "Only Primary With Bin Balance", "All Without Bin Balance", "ALL", "Only Bin Balance"})
         Me.cmbFilter.Location = New System.Drawing.Point(40, 85)
-        Me.cmbFilter.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbFilter.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbFilter.Name = "cmbFilter"
         Me.cmbFilter.Size = New System.Drawing.Size(166, 21)
         Me.cmbFilter.TabIndex = 5320
@@ -801,9 +807,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupApproved.Controls.Add(Me.lblPasswordA)
         Me.GroupApproved.Controls.Add(Me.lblUserIDA)
         Me.GroupApproved.Location = New System.Drawing.Point(330, 203)
-        Me.GroupApproved.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupApproved.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupApproved.Name = "GroupApproved"
-        Me.GroupApproved.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupApproved.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupApproved.Size = New System.Drawing.Size(246, 116)
         Me.GroupApproved.TabIndex = 5317
         Me.GroupApproved.TabStop = False
@@ -824,7 +830,7 @@ Partial Class frmMRP_By_Forcast
         'txbPasswordApprove
         '
         Me.txbPasswordApprove.Location = New System.Drawing.Point(80, 38)
-        Me.txbPasswordApprove.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbPasswordApprove.Margin = New System.Windows.Forms.Padding(2)
         Me.txbPasswordApprove.Name = "txbPasswordApprove"
         Me.txbPasswordApprove.Size = New System.Drawing.Size(122, 20)
         Me.txbPasswordApprove.TabIndex = 14
@@ -833,7 +839,7 @@ Partial Class frmMRP_By_Forcast
         'txbUserApprove
         '
         Me.txbUserApprove.Location = New System.Drawing.Point(80, 15)
-        Me.txbUserApprove.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbUserApprove.Margin = New System.Windows.Forms.Padding(2)
         Me.txbUserApprove.Name = "txbUserApprove"
         Me.txbUserApprove.Size = New System.Drawing.Size(122, 20)
         Me.txbUserApprove.TabIndex = 13
@@ -861,13 +867,14 @@ Partial Class frmMRP_By_Forcast
         'txbAUWIPForecast
         '
         Me.txbAUWIPForecast.Location = New System.Drawing.Point(44, 142)
-        Me.txbAUWIPForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbAUWIPForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.txbAUWIPForecast.Name = "txbAUWIPForecast"
         Me.txbAUWIPForecast.Size = New System.Drawing.Size(122, 20)
         Me.txbAUWIPForecast.TabIndex = 1134
         '
         'GroupBoxUploadFile
         '
+        Me.GroupBoxUploadFile.BackColor = System.Drawing.Color.White
         Me.GroupBoxUploadFile.Controls.Add(Me.Button1)
         Me.GroupBoxUploadFile.Controls.Add(Me.lblForecastReference)
         Me.GroupBoxUploadFile.Controls.Add(Me.btnStartProcess)
@@ -875,10 +882,10 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxUploadFile.Controls.Add(Me.GridExcelForecast)
         Me.GroupBoxUploadFile.Controls.Add(Me.cmbHojasDeCalculo)
         Me.GroupBoxUploadFile.Controls.Add(Me.btnOpenFileForecast)
-        Me.GroupBoxUploadFile.Location = New System.Drawing.Point(11, 11)
-        Me.GroupBoxUploadFile.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxUploadFile.Location = New System.Drawing.Point(11, 16)
+        Me.GroupBoxUploadFile.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxUploadFile.Name = "GroupBoxUploadFile"
-        Me.GroupBoxUploadFile.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxUploadFile.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxUploadFile.Size = New System.Drawing.Size(1162, 530)
         Me.GroupBoxUploadFile.TabIndex = 5332
         Me.GroupBoxUploadFile.TabStop = False
@@ -887,10 +894,12 @@ Partial Class frmMRP_By_Forcast
         '
         'Button1
         '
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Location = New System.Drawing.Point(568, 57)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(56, 19)
+        Me.Button1.Size = New System.Drawing.Size(56, 27)
         Me.Button1.TabIndex = 18
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
@@ -908,10 +917,12 @@ Partial Class frmMRP_By_Forcast
         '
         'btnStartProcess
         '
+        Me.btnStartProcess.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnStartProcess.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnStartProcess.Location = New System.Drawing.Point(136, 45)
-        Me.btnStartProcess.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnStartProcess.Margin = New System.Windows.Forms.Padding(2)
         Me.btnStartProcess.Name = "btnStartProcess"
-        Me.btnStartProcess.Size = New System.Drawing.Size(86, 28)
+        Me.btnStartProcess.Size = New System.Drawing.Size(86, 36)
         Me.btnStartProcess.TabIndex = 16
         Me.btnStartProcess.Text = "Start Process"
         Me.btnStartProcess.UseVisualStyleBackColor = True
@@ -928,9 +939,10 @@ Partial Class frmMRP_By_Forcast
         '
         'GridExcelForecast
         '
+        Me.GridExcelForecast.BackgroundColor = System.Drawing.Color.White
         Me.GridExcelForecast.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridExcelForecast.Location = New System.Drawing.Point(8, 105)
-        Me.GridExcelForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GridExcelForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.GridExcelForecast.Name = "GridExcelForecast"
         Me.GridExcelForecast.RowTemplate.Height = 24
         Me.GridExcelForecast.Size = New System.Drawing.Size(920, 358)
@@ -939,19 +951,22 @@ Partial Class frmMRP_By_Forcast
         'cmbHojasDeCalculo
         '
         Me.cmbHojasDeCalculo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbHojasDeCalculo.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.cmbHojasDeCalculo.FormattingEnabled = True
         Me.cmbHojasDeCalculo.Location = New System.Drawing.Point(136, 15)
-        Me.cmbHojasDeCalculo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbHojasDeCalculo.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbHojasDeCalculo.Name = "cmbHojasDeCalculo"
         Me.cmbHojasDeCalculo.Size = New System.Drawing.Size(228, 21)
         Me.cmbHojasDeCalculo.TabIndex = 13
         '
         'btnOpenFileForecast
         '
+        Me.btnOpenFileForecast.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnOpenFileForecast.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOpenFileForecast.Location = New System.Drawing.Point(12, 18)
-        Me.btnOpenFileForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnOpenFileForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.btnOpenFileForecast.Name = "btnOpenFileForecast"
-        Me.btnOpenFileForecast.Size = New System.Drawing.Size(105, 28)
+        Me.btnOpenFileForecast.Size = New System.Drawing.Size(105, 36)
         Me.btnOpenFileForecast.TabIndex = 12
         Me.btnOpenFileForecast.Text = "Open Forcast File"
         Me.btnOpenFileForecast.UseVisualStyleBackColor = True
@@ -972,9 +987,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxPNBOMForecast.Controls.Add(Me.Label5)
         Me.GroupBoxPNBOMForecast.Controls.Add(Me.btnFindBOMForecast)
         Me.GroupBoxPNBOMForecast.Location = New System.Drawing.Point(10, 24)
-        Me.GroupBoxPNBOMForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxPNBOMForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxPNBOMForecast.Name = "GroupBoxPNBOMForecast"
-        Me.GroupBoxPNBOMForecast.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxPNBOMForecast.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxPNBOMForecast.Size = New System.Drawing.Size(253, 72)
         Me.GroupBoxPNBOMForecast.TabIndex = 1137
         Me.GroupBoxPNBOMForecast.TabStop = False
@@ -983,7 +998,7 @@ Partial Class frmMRP_By_Forcast
         'txbPNBOMForecast
         '
         Me.txbPNBOMForecast.Location = New System.Drawing.Point(32, 25)
-        Me.txbPNBOMForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbPNBOMForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.txbPNBOMForecast.Name = "txbPNBOMForecast"
         Me.txbPNBOMForecast.Size = New System.Drawing.Size(174, 20)
         Me.txbPNBOMForecast.TabIndex = 1126
@@ -1003,7 +1018,7 @@ Partial Class frmMRP_By_Forcast
         Me.btnFindBOMForecast.Font = New System.Drawing.Font("Microsoft Sans Serif", 4.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFindBOMForecast.Image = CType(resources.GetObject("btnFindBOMForecast.Image"), System.Drawing.Image)
         Me.btnFindBOMForecast.Location = New System.Drawing.Point(210, 17)
-        Me.btnFindBOMForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnFindBOMForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.btnFindBOMForecast.Name = "btnFindBOMForecast"
         Me.btnFindBOMForecast.Size = New System.Drawing.Size(38, 38)
         Me.btnFindBOMForecast.TabIndex = 1132
@@ -1027,9 +1042,10 @@ Partial Class frmMRP_By_Forcast
         Me.GridBOMForecast.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GridBOMForecast.BackgroundColor = System.Drawing.Color.White
         Me.GridBOMForecast.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridBOMForecast.Location = New System.Drawing.Point(268, 24)
-        Me.GridBOMForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GridBOMForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.GridBOMForecast.Name = "GridBOMForecast"
         Me.GridBOMForecast.RowTemplate.Height = 24
         Me.GridBOMForecast.Size = New System.Drawing.Size(651, 407)
@@ -1040,7 +1056,7 @@ Partial Class frmMRP_By_Forcast
         Me.cmbWIPBOMForecast.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbWIPBOMForecast.FormattingEnabled = True
         Me.cmbWIPBOMForecast.Location = New System.Drawing.Point(35, 76)
-        Me.cmbWIPBOMForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbWIPBOMForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbWIPBOMForecast.Name = "cmbWIPBOMForecast"
         Me.cmbWIPBOMForecast.Size = New System.Drawing.Size(214, 21)
         Me.cmbWIPBOMForecast.TabIndex = 1132
@@ -1052,9 +1068,9 @@ Partial Class frmMRP_By_Forcast
         Me.TabPageWipForecast.Controls.Add(Me.GridWIPForecast)
         Me.TabPageWipForecast.Controls.Add(Me.txbAUWIPForecast)
         Me.TabPageWipForecast.Location = New System.Drawing.Point(4, 22)
-        Me.TabPageWipForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageWipForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPageWipForecast.Name = "TabPageWipForecast"
-        Me.TabPageWipForecast.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageWipForecast.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPageWipForecast.Size = New System.Drawing.Size(1149, 497)
         Me.TabPageWipForecast.TabIndex = 7
         Me.TabPageWipForecast.Text = "WIP Forecast"
@@ -1068,9 +1084,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxAUWIPForecast.Controls.Add(Me.Label8)
         Me.GroupBoxAUWIPForecast.Controls.Add(Me.cmbRevWIPForecast)
         Me.GroupBoxAUWIPForecast.Location = New System.Drawing.Point(8, 28)
-        Me.GroupBoxAUWIPForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxAUWIPForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxAUWIPForecast.Name = "GroupBoxAUWIPForecast"
-        Me.GroupBoxAUWIPForecast.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxAUWIPForecast.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxAUWIPForecast.Size = New System.Drawing.Size(203, 80)
         Me.GroupBoxAUWIPForecast.TabIndex = 1141
         Me.GroupBoxAUWIPForecast.TabStop = False
@@ -1080,7 +1096,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.cmbAUWIPForecast.FormattingEnabled = True
         Me.cmbAUWIPForecast.Location = New System.Drawing.Point(35, 14)
-        Me.cmbAUWIPForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbAUWIPForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbAUWIPForecast.Name = "cmbAUWIPForecast"
         Me.cmbAUWIPForecast.Size = New System.Drawing.Size(121, 21)
         Me.cmbAUWIPForecast.TabIndex = 1138
@@ -1090,7 +1106,7 @@ Partial Class frmMRP_By_Forcast
         Me.btnWIPForecast.Font = New System.Drawing.Font("Microsoft Sans Serif", 4.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWIPForecast.Image = CType(resources.GetObject("btnWIPForecast.Image"), System.Drawing.Image)
         Me.btnWIPForecast.Location = New System.Drawing.Point(160, 18)
-        Me.btnWIPForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnWIPForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.btnWIPForecast.Name = "btnWIPForecast"
         Me.btnWIPForecast.Size = New System.Drawing.Size(38, 38)
         Me.btnWIPForecast.TabIndex = 1137
@@ -1122,7 +1138,7 @@ Partial Class frmMRP_By_Forcast
         Me.cmbRevWIPForecast.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbRevWIPForecast.FormattingEnabled = True
         Me.cmbRevWIPForecast.Location = New System.Drawing.Point(35, 40)
-        Me.cmbRevWIPForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbRevWIPForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbRevWIPForecast.Name = "cmbRevWIPForecast"
         Me.cmbRevWIPForecast.Size = New System.Drawing.Size(122, 21)
         Me.cmbRevWIPForecast.TabIndex = 1133
@@ -1144,9 +1160,10 @@ Partial Class frmMRP_By_Forcast
         Me.GridWIPForecast.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GridWIPForecast.BackgroundColor = System.Drawing.Color.White
         Me.GridWIPForecast.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridWIPForecast.Location = New System.Drawing.Point(216, 28)
-        Me.GridWIPForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GridWIPForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.GridWIPForecast.Name = "GridWIPForecast"
         Me.GridWIPForecast.RowTemplate.Height = 24
         Me.GridWIPForecast.Size = New System.Drawing.Size(704, 407)
@@ -1160,7 +1177,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.cmbAUBOMForecast.FormattingEnabled = True
         Me.cmbAUBOMForecast.Location = New System.Drawing.Point(35, 27)
-        Me.cmbAUBOMForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbAUBOMForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbAUBOMForecast.Name = "cmbAUBOMForecast"
         Me.cmbAUBOMForecast.Size = New System.Drawing.Size(214, 21)
         Me.cmbAUBOMForecast.TabIndex = 1127
@@ -1170,7 +1187,7 @@ Partial Class frmMRP_By_Forcast
         Me.cmbWIPBOMWIP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbWIPBOMWIP.FormattingEnabled = True
         Me.cmbWIPBOMWIP.Location = New System.Drawing.Point(62, 76)
-        Me.cmbWIPBOMWIP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbWIPBOMWIP.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbWIPBOMWIP.Name = "cmbWIPBOMWIP"
         Me.cmbWIPBOMWIP.Size = New System.Drawing.Size(92, 21)
         Me.cmbWIPBOMWIP.TabIndex = 1132
@@ -1209,9 +1226,9 @@ Partial Class frmMRP_By_Forcast
         Me.TabPageMRP.Controls.Add(Me.lblRecordsMRP)
         Me.TabPageMRP.Controls.Add(Me.lblMRP)
         Me.TabPageMRP.Location = New System.Drawing.Point(4, 22)
-        Me.TabPageMRP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageMRP.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPageMRP.Name = "TabPageMRP"
-        Me.TabPageMRP.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageMRP.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPageMRP.Size = New System.Drawing.Size(1149, 497)
         Me.TabPageMRP.TabIndex = 0
         Me.TabPageMRP.Text = "MRP Report"
@@ -1221,7 +1238,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.btnLoadMRP.BackColor = System.Drawing.SystemColors.Control
         Me.btnLoadMRP.Location = New System.Drawing.Point(604, 76)
-        Me.btnLoadMRP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnLoadMRP.Margin = New System.Windows.Forms.Padding(2)
         Me.btnLoadMRP.Name = "btnLoadMRP"
         Me.btnLoadMRP.Size = New System.Drawing.Size(65, 25)
         Me.btnLoadMRP.TabIndex = 5318
@@ -1233,9 +1250,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxSaved.Controls.Add(Me.rdoViewOnly)
         Me.GroupBoxSaved.Controls.Add(Me.rdoSaveReport)
         Me.GroupBoxSaved.Location = New System.Drawing.Point(510, 39)
-        Me.GroupBoxSaved.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxSaved.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxSaved.Name = "GroupBoxSaved"
-        Me.GroupBoxSaved.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxSaved.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxSaved.Size = New System.Drawing.Size(89, 65)
         Me.GroupBoxSaved.TabIndex = 5317
         Me.GroupBoxSaved.TabStop = False
@@ -1244,7 +1261,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.rdoViewOnly.AutoSize = True
         Me.rdoViewOnly.Location = New System.Drawing.Point(4, 38)
-        Me.rdoViewOnly.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.rdoViewOnly.Margin = New System.Windows.Forms.Padding(2)
         Me.rdoViewOnly.Name = "rdoViewOnly"
         Me.rdoViewOnly.Size = New System.Drawing.Size(72, 17)
         Me.rdoViewOnly.TabIndex = 1
@@ -1256,7 +1273,7 @@ Partial Class frmMRP_By_Forcast
         Me.rdoSaveReport.AutoSize = True
         Me.rdoSaveReport.Checked = True
         Me.rdoSaveReport.Location = New System.Drawing.Point(4, 14)
-        Me.rdoSaveReport.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.rdoSaveReport.Margin = New System.Windows.Forms.Padding(2)
         Me.rdoSaveReport.Name = "rdoSaveReport"
         Me.rdoSaveReport.Size = New System.Drawing.Size(85, 17)
         Me.rdoSaveReport.TabIndex = 0
@@ -1272,25 +1289,25 @@ Partial Class frmMRP_By_Forcast
         Me.GridMRP.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GridMRP.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GridMRP.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
         Me.GridMRP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GridMRP.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GridMRP.DefaultCellStyle = DataGridViewCellStyle12
         Me.GridMRP.Location = New System.Drawing.Point(4, 111)
-        Me.GridMRP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GridMRP.Margin = New System.Windows.Forms.Padding(2)
         Me.GridMRP.Name = "GridMRP"
         Me.GridMRP.RowTemplate.Height = 24
         Me.GridMRP.Size = New System.Drawing.Size(1143, 369)
@@ -1309,9 +1326,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxOption.Controls.Add(Me.rdoAllWeeks)
         Me.GroupBoxOption.Controls.Add(Me.btnCalculate)
         Me.GroupBoxOption.Location = New System.Drawing.Point(4, 17)
-        Me.GroupBoxOption.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxOption.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxOption.Name = "GroupBoxOption"
-        Me.GroupBoxOption.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxOption.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxOption.Size = New System.Drawing.Size(400, 65)
         Me.GroupBoxOption.TabIndex = 5290
         Me.GroupBoxOption.TabStop = False
@@ -1321,7 +1338,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.ckbPastDue.AutoSize = True
         Me.ckbPastDue.Location = New System.Drawing.Point(326, 11)
-        Me.ckbPastDue.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ckbPastDue.Margin = New System.Windows.Forms.Padding(2)
         Me.ckbPastDue.Name = "ckbPastDue"
         Me.ckbPastDue.Size = New System.Drawing.Size(70, 17)
         Me.ckbPastDue.TabIndex = 8
@@ -1372,7 +1389,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.dtpTo.Enabled = False
         Me.dtpTo.Location = New System.Drawing.Point(118, 40)
-        Me.dtpTo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dtpTo.Margin = New System.Windows.Forms.Padding(2)
         Me.dtpTo.Name = "dtpTo"
         Me.dtpTo.Size = New System.Drawing.Size(182, 20)
         Me.dtpTo.TabIndex = 3
@@ -1381,7 +1398,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.dtpFrom.Enabled = False
         Me.dtpFrom.Location = New System.Drawing.Point(118, 13)
-        Me.dtpFrom.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dtpFrom.Margin = New System.Windows.Forms.Padding(2)
         Me.dtpFrom.Name = "dtpFrom"
         Me.dtpFrom.Size = New System.Drawing.Size(182, 20)
         Me.dtpFrom.TabIndex = 2
@@ -1390,7 +1407,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.rdoSpecificDates.AutoSize = True
         Me.rdoSpecificDates.Location = New System.Drawing.Point(4, 37)
-        Me.rdoSpecificDates.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.rdoSpecificDates.Margin = New System.Windows.Forms.Padding(2)
         Me.rdoSpecificDates.Name = "rdoSpecificDates"
         Me.rdoSpecificDates.Size = New System.Drawing.Size(94, 17)
         Me.rdoSpecificDates.TabIndex = 1
@@ -1402,7 +1419,7 @@ Partial Class frmMRP_By_Forcast
         Me.rdoAllWeeks.AutoSize = True
         Me.rdoAllWeeks.Checked = True
         Me.rdoAllWeeks.Location = New System.Drawing.Point(4, 17)
-        Me.rdoAllWeeks.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.rdoAllWeeks.Margin = New System.Windows.Forms.Padding(2)
         Me.rdoAllWeeks.Name = "rdoAllWeeks"
         Me.rdoAllWeeks.Size = New System.Drawing.Size(73, 17)
         Me.rdoAllWeeks.TabIndex = 0
@@ -1414,7 +1431,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.btnCalculate.BackColor = System.Drawing.SystemColors.Highlight
         Me.btnCalculate.Location = New System.Drawing.Point(326, 35)
-        Me.btnCalculate.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCalculate.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(65, 25)
         Me.btnCalculate.TabIndex = 0
@@ -1427,9 +1444,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxFind.Controls.Add(Me.txbFind)
         Me.GroupBoxFind.Controls.Add(Me.btnFind)
         Me.GroupBoxFind.Location = New System.Drawing.Point(412, 17)
-        Me.GroupBoxFind.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxFind.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxFind.Name = "GroupBoxFind"
-        Me.GroupBoxFind.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxFind.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxFind.Size = New System.Drawing.Size(92, 87)
         Me.GroupBoxFind.TabIndex = 5313
         Me.GroupBoxFind.TabStop = False
@@ -1448,7 +1465,7 @@ Partial Class frmMRP_By_Forcast
         'txbFind
         '
         Me.txbFind.Location = New System.Drawing.Point(7, 33)
-        Me.txbFind.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbFind.Margin = New System.Windows.Forms.Padding(2)
         Me.txbFind.Name = "txbFind"
         Me.txbFind.Size = New System.Drawing.Size(83, 20)
         Me.txbFind.TabIndex = 5291
@@ -1456,7 +1473,7 @@ Partial Class frmMRP_By_Forcast
         'btnFind
         '
         Me.btnFind.Location = New System.Drawing.Point(7, 56)
-        Me.btnFind.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnFind.Margin = New System.Windows.Forms.Padding(2)
         Me.btnFind.Name = "btnFind"
         Me.btnFind.Size = New System.Drawing.Size(82, 25)
         Me.btnFind.TabIndex = 5292
@@ -1468,7 +1485,7 @@ Partial Class frmMRP_By_Forcast
         Me.btnExportToExcel.Enabled = False
         Me.btnExportToExcel.Image = CType(resources.GetObject("btnExportToExcel.Image"), System.Drawing.Image)
         Me.btnExportToExcel.Location = New System.Drawing.Point(672, 62)
-        Me.btnExportToExcel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnExportToExcel.Margin = New System.Windows.Forms.Padding(2)
         Me.btnExportToExcel.Name = "btnExportToExcel"
         Me.btnExportToExcel.Size = New System.Drawing.Size(38, 40)
         Me.btnExportToExcel.TabIndex = 5295
@@ -1489,7 +1506,7 @@ Partial Class frmMRP_By_Forcast
         Me.btnClear.BackColor = System.Drawing.SystemColors.Control
         Me.btnClear.Image = CType(resources.GetObject("btnClear.Image"), System.Drawing.Image)
         Me.btnClear.Location = New System.Drawing.Point(714, 62)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(36, 40)
         Me.btnClear.TabIndex = 5296
@@ -1498,7 +1515,7 @@ Partial Class frmMRP_By_Forcast
         'txbQty
         '
         Me.txbQty.Location = New System.Drawing.Point(320, 84)
-        Me.txbQty.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbQty.Margin = New System.Windows.Forms.Padding(2)
         Me.txbQty.Name = "txbQty"
         Me.txbQty.Size = New System.Drawing.Size(76, 20)
         Me.txbQty.TabIndex = 5311
@@ -1538,37 +1555,29 @@ Partial Class frmMRP_By_Forcast
         '
         'GroupBoxUserMRP
         '
-        Me.GroupBoxUserMRP.Controls.Add(Me.btnCancelLoginEng)
+        Me.GroupBoxUserMRP.BackColor = System.Drawing.Color.White
         Me.GroupBoxUserMRP.Controls.Add(Me.btnLoginMRP)
         Me.GroupBoxUserMRP.Controls.Add(Me.txbUserMRP)
         Me.GroupBoxUserMRP.Controls.Add(Me.lblTEngPassword)
         Me.GroupBoxUserMRP.Controls.Add(Me.txbUserMRPPassword)
         Me.GroupBoxUserMRP.Controls.Add(Me.lblTEngUser)
-        Me.GroupBoxUserMRP.Location = New System.Drawing.Point(374, 6)
-        Me.GroupBoxUserMRP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxUserMRP.Location = New System.Drawing.Point(459, 1)
+        Me.GroupBoxUserMRP.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxUserMRP.Name = "GroupBoxUserMRP"
-        Me.GroupBoxUserMRP.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxUserMRP.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxUserMRP.Size = New System.Drawing.Size(250, 107)
         Me.GroupBoxUserMRP.TabIndex = 5336
         Me.GroupBoxUserMRP.TabStop = False
         Me.GroupBoxUserMRP.Text = "Datos del Comprador"
         '
-        'btnCancelLoginEng
-        '
-        Me.btnCancelLoginEng.Image = CType(resources.GetObject("btnCancelLoginEng.Image"), System.Drawing.Image)
-        Me.btnCancelLoginEng.Location = New System.Drawing.Point(4, 74)
-        Me.btnCancelLoginEng.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.btnCancelLoginEng.Name = "btnCancelLoginEng"
-        Me.btnCancelLoginEng.Size = New System.Drawing.Size(38, 31)
-        Me.btnCancelLoginEng.TabIndex = 12
-        Me.btnCancelLoginEng.UseVisualStyleBackColor = True
-        '
         'btnLoginMRP
         '
+        Me.btnLoginMRP.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnLoginMRP.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLoginMRP.Location = New System.Drawing.Point(126, 74)
-        Me.btnLoginMRP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnLoginMRP.Margin = New System.Windows.Forms.Padding(2)
         Me.btnLoginMRP.Name = "btnLoginMRP"
-        Me.btnLoginMRP.Size = New System.Drawing.Size(56, 28)
+        Me.btnLoginMRP.Size = New System.Drawing.Size(56, 29)
         Me.btnLoginMRP.TabIndex = 11
         Me.btnLoginMRP.Text = "Entrar"
         Me.btnLoginMRP.UseVisualStyleBackColor = True
@@ -1576,7 +1585,7 @@ Partial Class frmMRP_By_Forcast
         'txbUserMRP
         '
         Me.txbUserMRP.Location = New System.Drawing.Point(94, 28)
-        Me.txbUserMRP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbUserMRP.Margin = New System.Windows.Forms.Padding(2)
         Me.txbUserMRP.Name = "txbUserMRP"
         Me.txbUserMRP.Size = New System.Drawing.Size(153, 20)
         Me.txbUserMRP.TabIndex = 9
@@ -1594,7 +1603,7 @@ Partial Class frmMRP_By_Forcast
         'txbUserMRPPassword
         '
         Me.txbUserMRPPassword.Location = New System.Drawing.Point(94, 51)
-        Me.txbUserMRPPassword.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbUserMRPPassword.Margin = New System.Windows.Forms.Padding(2)
         Me.txbUserMRPPassword.Name = "txbUserMRPPassword"
         Me.txbUserMRPPassword.Size = New System.Drawing.Size(153, 20)
         Me.txbUserMRPPassword.TabIndex = 10
@@ -1613,7 +1622,7 @@ Partial Class frmMRP_By_Forcast
         'txbUser
         '
         Me.txbUser.Location = New System.Drawing.Point(9, 536)
-        Me.txbUser.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbUser.Margin = New System.Windows.Forms.Padding(2)
         Me.txbUser.Name = "txbUser"
         Me.txbUser.Size = New System.Drawing.Size(76, 20)
         Me.txbUser.TabIndex = 5334
@@ -1623,7 +1632,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.cmbPONoAprovadas.FormattingEnabled = True
         Me.cmbPONoAprovadas.Location = New System.Drawing.Point(91, 536)
-        Me.cmbPONoAprovadas.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbPONoAprovadas.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbPONoAprovadas.Name = "cmbPONoAprovadas"
         Me.cmbPONoAprovadas.Size = New System.Drawing.Size(92, 21)
         Me.cmbPONoAprovadas.TabIndex = 5335
@@ -1638,9 +1647,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxAUWIPBOMForecast.Controls.Add(Me.Label3)
         Me.GroupBoxAUWIPBOMForecast.Controls.Add(Me.Label4)
         Me.GroupBoxAUWIPBOMForecast.Location = New System.Drawing.Point(10, 101)
-        Me.GroupBoxAUWIPBOMForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxAUWIPBOMForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxAUWIPBOMForecast.Name = "GroupBoxAUWIPBOMForecast"
-        Me.GroupBoxAUWIPBOMForecast.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxAUWIPBOMForecast.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxAUWIPBOMForecast.Size = New System.Drawing.Size(253, 113)
         Me.GroupBoxAUWIPBOMForecast.TabIndex = 1138
         Me.GroupBoxAUWIPBOMForecast.TabStop = False
@@ -1651,7 +1660,7 @@ Partial Class frmMRP_By_Forcast
         Me.cmbRevBOMForecast.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbRevBOMForecast.FormattingEnabled = True
         Me.cmbRevBOMForecast.Location = New System.Drawing.Point(35, 51)
-        Me.cmbRevBOMForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbRevBOMForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbRevBOMForecast.Name = "cmbRevBOMForecast"
         Me.cmbRevBOMForecast.Size = New System.Drawing.Size(214, 21)
         Me.cmbRevBOMForecast.TabIndex = 1128
@@ -1689,8 +1698,8 @@ Partial Class frmMRP_By_Forcast
         Me.TabControlMRPGlobal.Controls.Add(Me.TabPageWIPByAU)
         Me.TabControlMRPGlobal.Controls.Add(Me.TabPageBOMForecast)
         Me.TabControlMRPGlobal.Controls.Add(Me.TabPageWipForecast)
-        Me.TabControlMRPGlobal.Location = New System.Drawing.Point(12, 18)
-        Me.TabControlMRPGlobal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabControlMRPGlobal.Location = New System.Drawing.Point(9, 9)
+        Me.TabControlMRPGlobal.Margin = New System.Windows.Forms.Padding(2)
         Me.TabControlMRPGlobal.Name = "TabControlMRPGlobal"
         Me.TabControlMRPGlobal.SelectedIndex = 0
         Me.TabControlMRPGlobal.Size = New System.Drawing.Size(1157, 523)
@@ -1704,9 +1713,9 @@ Partial Class frmMRP_By_Forcast
         Me.TabPageBOMWIP.Controls.Add(Me.lblRecordsBOMWIP)
         Me.TabPageBOMWIP.Controls.Add(Me.GridBOMWIP)
         Me.TabPageBOMWIP.Location = New System.Drawing.Point(4, 22)
-        Me.TabPageBOMWIP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageBOMWIP.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPageBOMWIP.Name = "TabPageBOMWIP"
-        Me.TabPageBOMWIP.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageBOMWIP.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPageBOMWIP.Size = New System.Drawing.Size(1149, 497)
         Me.TabPageBOMWIP.TabIndex = 1
         Me.TabPageBOMWIP.Text = "BOM WIP"
@@ -1721,9 +1730,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxAUBOMWIP.Controls.Add(Me.lblTRevBOMWIP)
         Me.GroupBoxAUBOMWIP.Controls.Add(Me.lblTAUBOMWIP)
         Me.GroupBoxAUBOMWIP.Location = New System.Drawing.Point(8, 105)
-        Me.GroupBoxAUBOMWIP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxAUBOMWIP.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxAUBOMWIP.Name = "GroupBoxAUBOMWIP"
-        Me.GroupBoxAUBOMWIP.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxAUBOMWIP.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxAUBOMWIP.Size = New System.Drawing.Size(200, 113)
         Me.GroupBoxAUBOMWIP.TabIndex = 1134
         Me.GroupBoxAUBOMWIP.TabStop = False
@@ -1743,7 +1752,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.cmbAUBOMWIP.FormattingEnabled = True
         Me.cmbAUBOMWIP.Location = New System.Drawing.Point(62, 27)
-        Me.cmbAUBOMWIP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbAUBOMWIP.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbAUBOMWIP.Name = "cmbAUBOMWIP"
         Me.cmbAUBOMWIP.Size = New System.Drawing.Size(92, 21)
         Me.cmbAUBOMWIP.TabIndex = 1127
@@ -1753,7 +1762,7 @@ Partial Class frmMRP_By_Forcast
         Me.cmbRevBOMWIP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbRevBOMWIP.FormattingEnabled = True
         Me.cmbRevBOMWIP.Location = New System.Drawing.Point(62, 51)
-        Me.cmbRevBOMWIP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbRevBOMWIP.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbRevBOMWIP.Name = "cmbRevBOMWIP"
         Me.cmbRevBOMWIP.Size = New System.Drawing.Size(92, 21)
         Me.cmbRevBOMWIP.TabIndex = 1128
@@ -1784,9 +1793,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxPNBOMWIP.Controls.Add(Me.lblTPNBOMWIP)
         Me.GroupBoxPNBOMWIP.Controls.Add(Me.btnFindBOMWIP)
         Me.GroupBoxPNBOMWIP.Location = New System.Drawing.Point(8, 28)
-        Me.GroupBoxPNBOMWIP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxPNBOMWIP.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxPNBOMWIP.Name = "GroupBoxPNBOMWIP"
-        Me.GroupBoxPNBOMWIP.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxPNBOMWIP.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxPNBOMWIP.Size = New System.Drawing.Size(200, 72)
         Me.GroupBoxPNBOMWIP.TabIndex = 1133
         Me.GroupBoxPNBOMWIP.TabStop = False
@@ -1795,7 +1804,7 @@ Partial Class frmMRP_By_Forcast
         'txbBOMWIP
         '
         Me.txbBOMWIP.Location = New System.Drawing.Point(32, 25)
-        Me.txbBOMWIP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbBOMWIP.Margin = New System.Windows.Forms.Padding(2)
         Me.txbBOMWIP.Name = "txbBOMWIP"
         Me.txbBOMWIP.Size = New System.Drawing.Size(121, 20)
         Me.txbBOMWIP.TabIndex = 1126
@@ -1815,7 +1824,7 @@ Partial Class frmMRP_By_Forcast
         Me.btnFindBOMWIP.Font = New System.Drawing.Font("Microsoft Sans Serif", 4.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFindBOMWIP.Image = CType(resources.GetObject("btnFindBOMWIP.Image"), System.Drawing.Image)
         Me.btnFindBOMWIP.Location = New System.Drawing.Point(157, 17)
-        Me.btnFindBOMWIP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnFindBOMWIP.Margin = New System.Windows.Forms.Padding(2)
         Me.btnFindBOMWIP.Name = "btnFindBOMWIP"
         Me.btnFindBOMWIP.Size = New System.Drawing.Size(38, 38)
         Me.btnFindBOMWIP.TabIndex = 1132
@@ -1839,9 +1848,10 @@ Partial Class frmMRP_By_Forcast
         Me.GridBOMWIP.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GridBOMWIP.BackgroundColor = System.Drawing.Color.White
         Me.GridBOMWIP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridBOMWIP.Location = New System.Drawing.Point(212, 28)
-        Me.GridBOMWIP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GridBOMWIP.Margin = New System.Windows.Forms.Padding(2)
         Me.GridBOMWIP.Name = "GridBOMWIP"
         Me.GridBOMWIP.RowTemplate.Height = 24
         Me.GridBOMWIP.Size = New System.Drawing.Size(704, 407)
@@ -1854,9 +1864,9 @@ Partial Class frmMRP_By_Forcast
         Me.TabPageBOMENG.Controls.Add(Me.lblRecordsBOMENG)
         Me.TabPageBOMENG.Controls.Add(Me.GridBOMENG)
         Me.TabPageBOMENG.Location = New System.Drawing.Point(4, 22)
-        Me.TabPageBOMENG.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageBOMENG.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPageBOMENG.Name = "TabPageBOMENG"
-        Me.TabPageBOMENG.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageBOMENG.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPageBOMENG.Size = New System.Drawing.Size(1149, 497)
         Me.TabPageBOMENG.TabIndex = 2
         Me.TabPageBOMENG.Text = "BOM ENG"
@@ -1869,9 +1879,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxByAUBOMENG.Controls.Add(Me.lblTAUBOMENG)
         Me.GroupBoxByAUBOMENG.Controls.Add(Me.lblTRevBOMENG)
         Me.GroupBoxByAUBOMENG.Location = New System.Drawing.Point(4, 105)
-        Me.GroupBoxByAUBOMENG.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxByAUBOMENG.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxByAUBOMENG.Name = "GroupBoxByAUBOMENG"
-        Me.GroupBoxByAUBOMENG.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxByAUBOMENG.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxByAUBOMENG.Size = New System.Drawing.Size(203, 76)
         Me.GroupBoxByAUBOMENG.TabIndex = 1129
         Me.GroupBoxByAUBOMENG.TabStop = False
@@ -1881,7 +1891,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.cmbAUBOMENG.FormattingEnabled = True
         Me.cmbAUBOMENG.Location = New System.Drawing.Point(69, 17)
-        Me.cmbAUBOMENG.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbAUBOMENG.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbAUBOMENG.Name = "cmbAUBOMENG"
         Me.cmbAUBOMENG.Size = New System.Drawing.Size(92, 21)
         Me.cmbAUBOMENG.TabIndex = 1120
@@ -1891,7 +1901,7 @@ Partial Class frmMRP_By_Forcast
         Me.cmbRevBOMENG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbRevBOMENG.FormattingEnabled = True
         Me.cmbRevBOMENG.Location = New System.Drawing.Point(69, 41)
-        Me.cmbRevBOMENG.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbRevBOMENG.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbRevBOMENG.Name = "cmbRevBOMENG"
         Me.cmbRevBOMENG.Size = New System.Drawing.Size(92, 21)
         Me.cmbRevBOMENG.TabIndex = 1121
@@ -1922,9 +1932,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxPNBOMENG.Controls.Add(Me.lblTPNBOMENG)
         Me.GroupBoxPNBOMENG.Controls.Add(Me.btnFindBOMENG)
         Me.GroupBoxPNBOMENG.Location = New System.Drawing.Point(4, 28)
-        Me.GroupBoxPNBOMENG.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxPNBOMENG.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxPNBOMENG.Name = "GroupBoxPNBOMENG"
-        Me.GroupBoxPNBOMENG.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxPNBOMENG.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxPNBOMENG.Size = New System.Drawing.Size(203, 64)
         Me.GroupBoxPNBOMENG.TabIndex = 1128
         Me.GroupBoxPNBOMENG.TabStop = False
@@ -1933,7 +1943,7 @@ Partial Class frmMRP_By_Forcast
         'txbPNBOMENG
         '
         Me.txbPNBOMENG.Location = New System.Drawing.Point(32, 25)
-        Me.txbPNBOMENG.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbPNBOMENG.Margin = New System.Windows.Forms.Padding(2)
         Me.txbPNBOMENG.Name = "txbPNBOMENG"
         Me.txbPNBOMENG.Size = New System.Drawing.Size(106, 20)
         Me.txbPNBOMENG.TabIndex = 1119
@@ -1953,7 +1963,7 @@ Partial Class frmMRP_By_Forcast
         Me.btnFindBOMENG.Font = New System.Drawing.Font("Microsoft Sans Serif", 4.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFindBOMENG.Image = CType(resources.GetObject("btnFindBOMENG.Image"), System.Drawing.Image)
         Me.btnFindBOMENG.Location = New System.Drawing.Point(142, 17)
-        Me.btnFindBOMENG.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnFindBOMENG.Margin = New System.Windows.Forms.Padding(2)
         Me.btnFindBOMENG.Name = "btnFindBOMENG"
         Me.btnFindBOMENG.Size = New System.Drawing.Size(38, 38)
         Me.btnFindBOMENG.TabIndex = 1125
@@ -1977,9 +1987,10 @@ Partial Class frmMRP_By_Forcast
         Me.GridBOMENG.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GridBOMENG.BackgroundColor = System.Drawing.Color.White
         Me.GridBOMENG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridBOMENG.Location = New System.Drawing.Point(212, 28)
-        Me.GridBOMENG.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GridBOMENG.Margin = New System.Windows.Forms.Padding(2)
         Me.GridBOMENG.Name = "GridBOMENG"
         Me.GridBOMENG.RowTemplate.Height = 24
         Me.GridBOMENG.Size = New System.Drawing.Size(704, 407)
@@ -1991,9 +2002,9 @@ Partial Class frmMRP_By_Forcast
         Me.TabPageMyTable.Controls.Add(Me.lblRecordsMyTable)
         Me.TabPageMyTable.Controls.Add(Me.GridMyTable)
         Me.TabPageMyTable.Location = New System.Drawing.Point(4, 22)
-        Me.TabPageMyTable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageMyTable.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPageMyTable.Name = "TabPageMyTable"
-        Me.TabPageMyTable.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageMyTable.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPageMyTable.Size = New System.Drawing.Size(1149, 497)
         Me.TabPageMyTable.TabIndex = 3
         Me.TabPageMyTable.Text = "Search in my table"
@@ -2003,9 +2014,9 @@ Partial Class frmMRP_By_Forcast
         '
         Me.GroupBoxPNMyTable.Controls.Add(Me.cmbPNMyTable)
         Me.GroupBoxPNMyTable.Location = New System.Drawing.Point(8, 32)
-        Me.GroupBoxPNMyTable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxPNMyTable.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxPNMyTable.Name = "GroupBoxPNMyTable"
-        Me.GroupBoxPNMyTable.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxPNMyTable.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxPNMyTable.Size = New System.Drawing.Size(203, 63)
         Me.GroupBoxPNMyTable.TabIndex = 1132
         Me.GroupBoxPNMyTable.TabStop = False
@@ -2015,7 +2026,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.cmbPNMyTable.FormattingEnabled = True
         Me.cmbPNMyTable.Location = New System.Drawing.Point(4, 26)
-        Me.cmbPNMyTable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbPNMyTable.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbPNMyTable.Name = "cmbPNMyTable"
         Me.cmbPNMyTable.Size = New System.Drawing.Size(195, 21)
         Me.cmbPNMyTable.TabIndex = 1133
@@ -2037,9 +2048,10 @@ Partial Class frmMRP_By_Forcast
         Me.GridMyTable.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GridMyTable.BackgroundColor = System.Drawing.Color.White
         Me.GridMyTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridMyTable.Location = New System.Drawing.Point(216, 32)
-        Me.GridMyTable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GridMyTable.Margin = New System.Windows.Forms.Padding(2)
         Me.GridMyTable.Name = "GridMyTable"
         Me.GridMyTable.RowTemplate.Height = 24
         Me.GridMyTable.Size = New System.Drawing.Size(704, 407)
@@ -2051,9 +2063,9 @@ Partial Class frmMRP_By_Forcast
         Me.TabPageWIPByAU.Controls.Add(Me.lblRecordsWipByAU)
         Me.TabPageWIPByAU.Controls.Add(Me.GridWipByAU)
         Me.TabPageWIPByAU.Location = New System.Drawing.Point(4, 22)
-        Me.TabPageWIPByAU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageWIPByAU.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPageWIPByAU.Name = "TabPageWIPByAU"
-        Me.TabPageWIPByAU.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageWIPByAU.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPageWIPByAU.Size = New System.Drawing.Size(1149, 497)
         Me.TabPageWIPByAU.TabIndex = 5
         Me.TabPageWIPByAU.Text = "WIP"
@@ -2068,9 +2080,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxWIPByAU.Controls.Add(Me.txbAUWipByAU)
         Me.GroupBoxWIPByAU.Controls.Add(Me.cmbRevWipByAU)
         Me.GroupBoxWIPByAU.Location = New System.Drawing.Point(8, 32)
-        Me.GroupBoxWIPByAU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxWIPByAU.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxWIPByAU.Name = "GroupBoxWIPByAU"
-        Me.GroupBoxWIPByAU.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxWIPByAU.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxWIPByAU.Size = New System.Drawing.Size(203, 164)
         Me.GroupBoxWIPByAU.TabIndex = 1138
         Me.GroupBoxWIPByAU.TabStop = False
@@ -2083,9 +2095,9 @@ Partial Class frmMRP_By_Forcast
         Me.GroupBoxStatusWIPByAU.Controls.Add(Me.rdoCancelWipByAU)
         Me.GroupBoxStatusWIPByAU.Controls.Add(Me.rdoCloseWipByAU)
         Me.GroupBoxStatusWIPByAU.Location = New System.Drawing.Point(35, 64)
-        Me.GroupBoxStatusWIPByAU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxStatusWIPByAU.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBoxStatusWIPByAU.Name = "GroupBoxStatusWIPByAU"
-        Me.GroupBoxStatusWIPByAU.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxStatusWIPByAU.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBoxStatusWIPByAU.Size = New System.Drawing.Size(61, 80)
         Me.GroupBoxStatusWIPByAU.TabIndex = 1142
         Me.GroupBoxStatusWIPByAU.TabStop = False
@@ -2094,7 +2106,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.rdoAllWipByAU.AutoSize = True
         Me.rdoAllWipByAU.Location = New System.Drawing.Point(4, 60)
-        Me.rdoAllWipByAU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.rdoAllWipByAU.Margin = New System.Windows.Forms.Padding(2)
         Me.rdoAllWipByAU.Name = "rdoAllWipByAU"
         Me.rdoAllWipByAU.Size = New System.Drawing.Size(36, 17)
         Me.rdoAllWipByAU.TabIndex = 1141
@@ -2106,7 +2118,7 @@ Partial Class frmMRP_By_Forcast
         Me.rdoOpenWipByAU.AutoSize = True
         Me.rdoOpenWipByAU.Checked = True
         Me.rdoOpenWipByAU.Location = New System.Drawing.Point(4, 9)
-        Me.rdoOpenWipByAU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.rdoOpenWipByAU.Margin = New System.Windows.Forms.Padding(2)
         Me.rdoOpenWipByAU.Name = "rdoOpenWipByAU"
         Me.rdoOpenWipByAU.Size = New System.Drawing.Size(51, 17)
         Me.rdoOpenWipByAU.TabIndex = 1138
@@ -2118,7 +2130,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.rdoCancelWipByAU.AutoSize = True
         Me.rdoCancelWipByAU.Location = New System.Drawing.Point(4, 43)
-        Me.rdoCancelWipByAU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.rdoCancelWipByAU.Margin = New System.Windows.Forms.Padding(2)
         Me.rdoCancelWipByAU.Name = "rdoCancelWipByAU"
         Me.rdoCancelWipByAU.Size = New System.Drawing.Size(58, 17)
         Me.rdoCancelWipByAU.TabIndex = 1140
@@ -2129,7 +2141,7 @@ Partial Class frmMRP_By_Forcast
         '
         Me.rdoCloseWipByAU.AutoSize = True
         Me.rdoCloseWipByAU.Location = New System.Drawing.Point(4, 26)
-        Me.rdoCloseWipByAU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.rdoCloseWipByAU.Margin = New System.Windows.Forms.Padding(2)
         Me.rdoCloseWipByAU.Name = "rdoCloseWipByAU"
         Me.rdoCloseWipByAU.Size = New System.Drawing.Size(51, 17)
         Me.rdoCloseWipByAU.TabIndex = 1139
@@ -2141,7 +2153,7 @@ Partial Class frmMRP_By_Forcast
         Me.btnFindWipByAU.Font = New System.Drawing.Font("Microsoft Sans Serif", 4.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFindWipByAU.Image = CType(resources.GetObject("btnFindWipByAU.Image"), System.Drawing.Image)
         Me.btnFindWipByAU.Location = New System.Drawing.Point(160, 18)
-        Me.btnFindWipByAU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnFindWipByAU.Margin = New System.Windows.Forms.Padding(2)
         Me.btnFindWipByAU.Name = "btnFindWipByAU"
         Me.btnFindWipByAU.Size = New System.Drawing.Size(38, 38)
         Me.btnFindWipByAU.TabIndex = 1137
@@ -2171,7 +2183,7 @@ Partial Class frmMRP_By_Forcast
         'txbAUWipByAU
         '
         Me.txbAUWipByAU.Location = New System.Drawing.Point(35, 17)
-        Me.txbAUWipByAU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txbAUWipByAU.Margin = New System.Windows.Forms.Padding(2)
         Me.txbAUWipByAU.Name = "txbAUWipByAU"
         Me.txbAUWipByAU.Size = New System.Drawing.Size(122, 20)
         Me.txbAUWipByAU.TabIndex = 1134
@@ -2181,7 +2193,7 @@ Partial Class frmMRP_By_Forcast
         Me.cmbRevWipByAU.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbRevWipByAU.FormattingEnabled = True
         Me.cmbRevWipByAU.Location = New System.Drawing.Point(35, 40)
-        Me.cmbRevWipByAU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbRevWipByAU.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbRevWipByAU.Name = "cmbRevWipByAU"
         Me.cmbRevWipByAU.Size = New System.Drawing.Size(122, 21)
         Me.cmbRevWipByAU.TabIndex = 1133
@@ -2203,9 +2215,10 @@ Partial Class frmMRP_By_Forcast
         Me.GridWipByAU.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GridWipByAU.BackgroundColor = System.Drawing.Color.White
         Me.GridWipByAU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridWipByAU.Location = New System.Drawing.Point(216, 32)
-        Me.GridWipByAU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GridWipByAU.Margin = New System.Windows.Forms.Padding(2)
         Me.GridWipByAU.Name = "GridWipByAU"
         Me.GridWipByAU.RowTemplate.Height = 24
         Me.GridWipByAU.Size = New System.Drawing.Size(704, 407)
@@ -2218,9 +2231,9 @@ Partial Class frmMRP_By_Forcast
         Me.TabPageBOMForecast.Controls.Add(Me.lblRecordsGridBOMForecast)
         Me.TabPageBOMForecast.Controls.Add(Me.GridBOMForecast)
         Me.TabPageBOMForecast.Location = New System.Drawing.Point(4, 22)
-        Me.TabPageBOMForecast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageBOMForecast.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPageBOMForecast.Name = "TabPageBOMForecast"
-        Me.TabPageBOMForecast.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPageBOMForecast.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPageBOMForecast.Size = New System.Drawing.Size(1149, 497)
         Me.TabPageBOMForecast.TabIndex = 6
         Me.TabPageBOMForecast.Text = "BOM Forecast"
@@ -2230,15 +2243,18 @@ Partial Class frmMRP_By_Forcast
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1184, 581)
         Me.Controls.Add(Me.GroupBoxUserMRP)
-        Me.Controls.Add(Me.GroupBoxUploadFile)
         Me.Controls.Add(Me.txbUser)
         Me.Controls.Add(Me.cmbPONoAprovadas)
+        Me.Controls.Add(Me.GroupBoxUploadFile)
         Me.Controls.Add(Me.TabControlMRPGlobal)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMRP_By_Forcast"
+        Me.Opacity = 0R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "frmMRP_By_Forcast"
+        Me.Text = "MRP Forecast"
         Me.GroupBoxPurchasingOrderHistory.ResumeLayout(False)
         Me.GroupBoxPurchasingOrderHistory.PerformLayout()
         Me.GroupBoxBudgetInformation.ResumeLayout(False)
@@ -2425,7 +2441,6 @@ Partial Class frmMRP_By_Forcast
     Friend WithEvents lblTMRPReference As Label
     Friend WithEvents lblRecordsMRP As Label
     Friend WithEvents GroupBoxUserMRP As GroupBox
-    Friend WithEvents btnCancelLoginEng As Button
     Friend WithEvents btnLoginMRP As Button
     Friend WithEvents txbUserMRP As TextBox
     Friend WithEvents lblTEngPassword As Label
